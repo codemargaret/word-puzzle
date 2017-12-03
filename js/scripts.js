@@ -3,12 +3,8 @@ $(document).ready(function() {
     var userInputInJs = $("input.userInput").val();
     var finalPuzzle =[];
     event.preventDefault();
-
-      // $("#sentence1").text(userInputInJs);
       $(".sentence").hide();
       $("#puzzle").show();
-      // newUserInputSlice1 = userInputInJs.slice();
-
 
       for (var index=0; userInputInJs.length > index; index +=1 ) {
         var place = userInputInJs[index];
@@ -22,14 +18,9 @@ $(document).ready(function() {
         }
       }
 
-
-      // alert(newUserInputSlice1);
-
     $("#return").click(function(){
       $("#puzzle").hide();
       $(".sentence").show();
-
-
     });
   });
 });
